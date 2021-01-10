@@ -205,20 +205,20 @@ Resources:
           - 0
           - !Split
             - ","
-            - Fn::ImportValue: !Sub "${ExportPrefix}PriNets"
+            - Fn::ImportValue: !Sub PriNets
         Subnet2ID: !Select
           - 1
           - !Split
             - ","
-            - Fn::ImportValue: !Sub "${ExportPrefix}PriNets"
+            - Fn::ImportValue: !Sub PriNets
         VPCID:
-          Fn::ImportValue: !Sub "${ExportPrefix}VPCID"
+          Fn::ImportValue: !Sub VpcID
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 343e943a20f6c3c4ca3cbd289cf903905528b98a"
+          Value: "COMMIT: 217805cbda2eb48f290c6256460a7811ead7e7ac"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2020-07-30T01:36:47Z"
+          Value: "TIMESTAMP: 2021-01-10T22:39:59Z"
 
   PostgresDatabase:
     Type: AWS::CloudFormation::Stack
@@ -251,18 +251,18 @@ Resources:
           - 0
           - !Split
             - ","
-            - Fn::ImportValue: !Sub "${ExportPrefix}PriNets"
+            - Fn::ImportValue: !Sub PriNets
         Subnet2ID: !Select
           - 1
           - !Split
             - ","
-            - Fn::ImportValue: !Sub "${ExportPrefix}PriNets"
+            - Fn::ImportValue: !Sub PriNets
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 343e943a20f6c3c4ca3cbd289cf903905528b98a"
+          Value: "COMMIT: 217805cbda2eb48f290c6256460a7811ead7e7ac"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2020-07-30T01:36:47Z"
+          Value: "TIMESTAMP: 2021-01-10T22:39:59Z"
 
 
 Outputs:
