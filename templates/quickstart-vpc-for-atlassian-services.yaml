@@ -198,9 +198,9 @@ Resources:
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 217805cbda2eb48f290c6256460a7811ead7e7ac"
+          Value: "COMMIT: dbea43c5c52f426e2b0c4469723550dc604abf2e"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2021-01-10T22:39:59Z"
+          Value: "TIMESTAMP: 2021-01-10T23:32:57Z"
 
   BastionStack:
     Type: AWS::CloudFormation::Stack
