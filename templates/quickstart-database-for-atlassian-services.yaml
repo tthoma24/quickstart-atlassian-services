@@ -226,9 +226,9 @@ Resources:
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 724c35021f37fdaf03e2b45fe6e5cd5b1fefa8df"
+          Value: "COMMIT: 0bdaac14b4e401ed39deee904e26afe7d0338365"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2021-01-11T00:09:56Z"
+          Value: "TIMESTAMP: 2021-01-11T00:10:23Z"
 
   PostgresDatabase:
     Type: AWS::CloudFormation::Stack
@@ -270,9 +270,9 @@ Resources:
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 724c35021f37fdaf03e2b45fe6e5cd5b1fefa8df"
+          Value: "COMMIT: 0bdaac14b4e401ed39deee904e26afe7d0338365"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2021-01-11T00:09:56Z"
+          Value: "TIMESTAMP: 2021-01-11T00:10:23Z"
 
 
 Outputs:
