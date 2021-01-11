@@ -140,6 +140,16 @@ Parameters:
       can include numbers, lowercase letters, uppercase letters, hyphens (-), and
       forward slash (/).
     Type: String
+  PriNets:
+    Default: ''
+    Description: "Private Subnet IDs, separated by comma"
+    MinLength: 0
+    MaxLength: 90
+    Type: String
+  VpcID:
+    Default: 'vpc-'
+    Description: ID of the VPC to deploy JIRA into.
+    Type: String
   ExportPrefix:
     Default: 'ATL-'
     Description:
@@ -216,9 +226,9 @@ Resources:
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 52a6452f1474467df568a6e10b75362a787618c6"
+          Value: "COMMIT: 724c35021f37fdaf03e2b45fe6e5cd5b1fefa8df"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2021-01-10T23:43:40Z"
+          Value: "TIMESTAMP: 2021-01-11T00:09:56Z"
 
   PostgresDatabase:
     Type: AWS::CloudFormation::Stack
@@ -260,9 +270,9 @@ Resources:
       Tags:
         # NOTE: The leading COMMIT/TIMESTAMP are used to locate the position to update; see scripts/update-tags.py
         - Key: "atl:quickstart:commit-id"
-          Value: "COMMIT: 52a6452f1474467df568a6e10b75362a787618c6"
+          Value: "COMMIT: 724c35021f37fdaf03e2b45fe6e5cd5b1fefa8df"
         - Key: "atl:quickstart:timestamp"
-          Value: "TIMESTAMP: 2021-01-10T23:43:40Z"
+          Value: "TIMESTAMP: 2021-01-11T00:09:56Z"
 
 
 Outputs:
